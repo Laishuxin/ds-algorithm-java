@@ -34,6 +34,10 @@ public class Array<E> {
         return size;
     }
 
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
     /**
      * Get element by index.
      * @param index
@@ -44,6 +48,14 @@ public class Array<E> {
             return null;
         }
         return container[index];
+    }
+
+    public E getFirst() {
+        return get(0);
+    }
+
+    public E getLast() {
+        return get(size - 1);
     }
 
     public int find(E e) {
