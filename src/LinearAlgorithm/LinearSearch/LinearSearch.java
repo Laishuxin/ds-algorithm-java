@@ -8,12 +8,12 @@ package LinearAlgorithm.LinearSearch;
  */
 public class LinearSearch {
 
-    private LinearSearch() {}
+  private LinearSearch() {}
 
-    public static <T> int linearSearch(T[] arr, T target) {
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i].equals(target)) return i;
-        }
-        return -1;
+  public static <T> int linearSearch(T[] arr, T target) {
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i].equals(target)) return i;
     }
+    return -1;
+  }
 }
