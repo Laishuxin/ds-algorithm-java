@@ -135,7 +135,7 @@ public class Array<E> {
 
   private void shrink() {
     int capacity = capacity();
-    if (size == capacity / 4) {
+    if (size == capacity / 4 && capacity / 2 != 0) {
       E[] newContainer = (E[]) new Object[capacity / 2];
       move(newContainer, 0, capacity / 4);
       container = newContainer;
